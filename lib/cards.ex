@@ -1,18 +1,9 @@
 defmodule Cards do
-  @moduledoc """
-  Documentation for Cards.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Cards.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def create_deck do
+    values= ["ace","two","three","four"]
+    suits = ["sapdes","clubs", "hearts", "diamonds"]
+    for suit <- suits, value <- values do
+      "#{value} of #{suit}" 
+    end
   end
 end
